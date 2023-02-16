@@ -1,0 +1,121 @@
+.main-thumbnail{
+  width: 100%;
+  max-height: 300px;
+  min-height: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  img{
+    width: 100%;
+  }
+
+  .main-banner-content{
+    position: absolute;
+
+    h1{
+      color: white;
+      font-size: 40px;
+      font-weight: bolder;
+      text-shadow: 0 0 10px #888;
+    }
+
+    span:hover{
+      color: #c0392b;
+      cursor: pointer;
+    }
+  }
+}
+
+.container{
+ .left-side{
+   width: 100%;
+   min-height: 200px;
+   height: auto;
+   padding-left: 2vw;
+
+   .title1{
+     width: 100%;
+     height: auto;
+
+     h1{
+       margin-bottom: 5px;
+       font-family: 'Barlow', sans-serif;
+       font-weight: bold;
+       font-size: 30px;
+       white-space: nowrap;
+     }
+   }
+
+   .contact-form-full-width{
+     width: 100%;
+     margin-right: 1.5vw;
+   }
+
+   .submit-btn{
+     padding: 10px;
+     background-color: red;
+     border-radius: 30px;
+     border: none;
+     color: white;
+     font-family: 'Barlow', sans-serif;
+     font-weight: bold;
+     margin-bottom: 2vw;
+   }
+ }
+
+ .right-side{
+   flex: 1;
+   padding: 0 2vw;
+
+   .title1{
+     width: 100%;
+     height: auto;
+
+     h1{
+       margin-bottom: 5px;
+       font-family: 'Barlow', sans-serif;
+       font-weight: bold;
+       font-size: 30px;
+       white-space: nowrap;
+     }
+   }
+
+   p{
+     font-size: 18px;
+     font-family: 'Barlow', sans-serif;
+     color: dimgray;
+   }
+
+   .get-in-touch-content{
+     height: auto;
+
+     span{
+       font-size: 16px;
+       color: dimgray;
+       white-space: nowrap;
+       margin-bottom: 1vw;
+
+       .icon{
+         width: 25px;
+         height: 25px;
+         position: relative;
+         display: inline-block;
+         background-color: #2c3e50;
+         border-radius: 100%;
+         padding: 5px;
+         margin: 0;
+       }
+       .mat-icon{
+         position: absolute;
+         font-size: 14px;
+         color: white;
+       }
+     }
+   }
+
+ }
+}

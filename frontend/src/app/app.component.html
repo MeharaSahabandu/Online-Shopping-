@@ -1,0 +1,307 @@
+<!--top bar-->
+<div class="main-outer">
+  <div class="row">
+    <div class="col-12">
+      <div class="top-bar-1">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-7 col-lg-9">
+            <div class="top-bar-1-content">
+              <p><span><a href="tel:sample@gmail.com"><mat-icon>phone</mat-icon> +11 0000567</a></span> &nbsp;|&nbsp;
+                <span><a href="mailto:sample@gmail.com"><mat-icon>email</mat-icon> info@gmail.com</a></span></p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-5 col-lg-3">
+            <div class="top-bar-1-content">
+              <p><span data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</span> &nbsp;|&nbsp;
+                <span>Wishlist</span> &nbsp;|&nbsp;
+                <span routerLink="/account">My Account</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="top-bar-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-md-flex align-items-center justify-content-between">
+              <div class="d-flex d-sm-flex align-items-center justify-content-center">
+                <div class="logo" routerLink="home">
+                  <img src="./assets/imgs/logo.png" alt="logo">
+                </div>
+              </div>
+              <div style="padding: 0 10%; width: 100%">
+                <form class="d-flex" role="search" style="width: 100%; height: 40px">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required="">
+                  <button class="btn btn-warning" type="submit">Search</button>
+                </form>
+              </div>
+              <div class="d-flex d-sm-flex align-items-center justify-content-end">
+                <p routerLink="/cart">
+                  <mat-icon>add_shopping_cart</mat-icon>&nbsp; <span><b>$125.00</b></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--navbar-->
+<hr>
+<div class="sticky-top d-lg-flex align-items-center"
+     style="background-image: url('./assets/imgs/navbar-bg-img-1.png'); width: 100%; min-height: 60px;">
+  <div class="d-lg-flex align-items-center justify-content-start container">
+    <div class="d-flex d-sm-flex align-items-center justify-content-end">
+      <nav class="navbar navbar-b navbar-trans navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" routerLink="/home">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/about">About Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  Pages
+                </a>
+                <div class="dropdown-content">
+                  <a routerLink="/not-found">404 Not Found</a>
+                  <a routerLink="/faq">FAQ</a>
+                  <a href="#">Coming Soon</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  Shop
+                </a>
+                <div class="dropdown-content">
+                  <div class="d-lg-flex align-items-start justify-content-center">
+
+                    <div style="width: 100%;">
+                      <h3
+                        style="font-size: 14px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        font-family: 'Barlow', sans-serif;
+                        color: #2c3e50;
+                        margin: 1vw 2vw">
+                        SHOP PAGES</h3>
+                      <a routerLink="/shop/shop-list-view/shop-list">Shop List View</a>
+                      <a routerLink="/shop/shop-list-view/shop-grid">Shop Grid View</a>
+                      <a routerLink="/shop/shop-col-3">Shop 3 Column</a>
+                      <a routerLink="/shop/shop-col-4">Shop 4 Column</a>
+                      <a routerLink="/shop/shop-left-side">Shop Left Sidebar</a>
+                      <a routerLink="/shop/shop-right-side">Shop Right Sidebar</a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div style="width: 1px; height: 20vw; margin: 2.5vw 0; background-color: #2c3e50;"></div>
+                    </div>
+
+                    <div style="width: 100%;">
+                      <h3
+                        style="font-size: 14px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        font-family: 'Barlow', sans-serif;
+                        color: #2c3e50;
+                        margin: 1vw 2vw">
+                        PRODUCT DETAILS</h3>
+                      <a routerLink="/product-default">Product Default</a>
+                      <a routerLink="/product-left-side">Product Left Sidebar</a>
+                      <a routerLink="/product-right-side">Product Right Sidebar</a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div style="width: 1px; height: 20vw; margin: 2.5vw 0; background-color: #2c3e50;"></div>
+                    </div>
+
+                    <div style="width: 100%;">
+                      <h3
+                        style="font-size: 14px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        font-family: 'Barlow', sans-serif;
+                        color: #2c3e50;
+                        margin: 1vw 2vw">
+                        EXTRA</h3>
+                      <a routerLink="/cart">Cart</a>
+                      <a routerLink="/check-out">Checkout</a>
+                      <a routerLink="/compare">Compare</a>
+                      <a routerLink="/account">My Account</a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div style="width: 1px; height: 20vw; margin: 2.5vw 0; background-color: #2c3e50;"></div>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                      <div class="d-lg-flex align-items-center justify-content-center"
+                           style="width: 100%; padding: 2.2vw; position: relative">
+                        <img style="width: 20vw" src="./assets/imgs/nav-bar-img.jpg" alt="see here">
+                        <div class="d-flex flex-column align-items-center justify-content-center"
+                             style="position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          background-color: rgba(255,255,255,0.5);">
+                          <h4 style="margin: 0; font-weight: bold; font-size: 1.5vw">WOMEN'S FASHION</h4>
+                          <h4 style="margin: 0; font-size: 1.2vw; color: red">25% OFF</h4>
+                          <h4 style="margin: 0; font-size: 1.1vw; text-decoration: underline">Shop Now</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="nav-item dropdown">
+                <a [mat-menu-trigger-for]="blog" class="nav-link mat-menu-hover" routerLink="/blog-left">
+                  Blog
+                </a>
+
+                <mat-menu #blog="matMenu" class="ng-deep mat-menu-panel">
+                  <button mat-menu-item [matMenuTriggerFor]="blogLayout">Blog Layout</button>
+                  <button mat-menu-item [matMenuTriggerFor]="blogMasonry">Blog Masonry</button>
+                  <button mat-menu-item routerLink="/blog-list">Blog List</button>
+                  <button mat-menu-item routerLink="/blog-single">Blog Single</button>
+                </mat-menu>
+
+                <mat-menu #blogLayout="matMenu" class="ng-deep">
+                  <button mat-menu-item routerLink="/blog-full-width">Blog Standard Full Width</button>
+                  <button mat-menu-item routerLink="/blog-left">Blog Standard Left Side</button>
+                  <button mat-menu-item routerLink="/blog-right">Blog Standard Right Side</button>
+                  <button mat-menu-item routerLink="/blog-grid-left">Blog Grid Left Sidebar</button>
+                  <button mat-menu-item routerLink="/blog-grid-right">Blog Grid Right Sidebar</button>
+                </mat-menu>
+
+                <mat-menu #blogMasonry="matMenu" class="ng-deep">
+                  <button mat-menu-item routerLink="/blog-masonry-3">Masonry 3 Columns</button>
+                  <button mat-menu-item routerLink="/blog-masonry-4">Masonry 4 Columns</button>
+                </mat-menu>
+
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<!--footer-->
+<div class="footer-outer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="d-lg-flex justify-content-center">
+
+        <div class="footer-content">
+          <h1 style="white-space: nowrap">ABOUT US</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae eius, laboriosam libero
+            officiis porro quia ratione reiciendis. Beatae blanditiis deserunt ea eligendi ipsum labore maiores officiis
+            reiciendis vero? Quas.</p>
+        </div>
+
+        <div class="d-md-flex justify-content-between">
+
+          <div class="footer-content">
+            <div class="d-flex justify-content-start align-items-start">
+              <div class="d-flex flex-column" style="padding-right: 20px">
+                <h1 style="white-space: nowrap">CATEGORIES</h1>
+                <span>Fashion Sneakers</span>
+                <span>Jackets</span>
+                <span>Outdoor Shop</span>
+                <span>Pants</span>
+                <span>Shirts & Tops</span>
+                <span>Swim Shop</span>
+                <span>Swimwear</span>
+              </div>
+              <div class="d-flex flex-column" style=" padding-left: 20px">
+                <h1 style="white-space: nowrap">MY ACCOUNT</h1>
+                <span routerLink="/cart">Orders</span>
+                <span routerLink="/compare">Compare</span>
+                <span>Wishlist</span>
+                <span routerLink="/account">Log In</span>
+                <span routerLink="/account">Register</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-content d-flex flex-column">
+            <h1 style="white-space: nowrap">CONTACT INFO</h1>
+            <span class="d-flex align-items-center"><mat-icon>location_on</mat-icon>&nbsp;&nbsp; Lorem ipsum dolor sit amet, 123/6</span>
+            <span class="d-flex align-items-center"><mat-icon>phone</mat-icon>&nbsp;&nbsp; +11 1234567</span>
+            <span class="d-flex align-items-center"><mat-icon>email</mat-icon>&nbsp;&nbsp; info@gmil.com</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom d-flex d-sm-flex flex-column align-items-center justify-content-center">
+    <div class="footer-bottom d-md-flex d-lg-flex align-items-center justify-content-between" style="padding: 0 100px;">
+      <div class="d-flex align-items-center justify-content-center">
+        <span>Copyright &copy; 2023. All Rights Received.</span>
+      </div>
+      <div class="social-btn-set">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-google-plus"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="padding: 10px 25px">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel" style="font-weight: bold;">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <input type="text"
+             style="width: 100%;height: 40px;border: 1px solid #888888;border-radius: 25px;text-align: center; margin-bottom: 10px"
+             placeholder="Ex: example@gmail.com">
+      <input type="password"
+             style="width: 100%;height: 40px;border: 1px solid #888888;border-radius: 25px;text-align: center; margin-bottom: 10px"
+             placeholder="password">
+
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" style="padding: 10px 25px; background-color: #636e72;border-radius: 25px;border: none;color: white;font-size: 18px">Cancel</button>
+        <button type="button" style="padding: 10px 25px; background-color: red;border-radius: 25px;border: none;color: white;font-size: 18px">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
